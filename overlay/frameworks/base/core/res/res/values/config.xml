@@ -473,4 +473,7 @@
     <!-- Height of the status bar -->
     <dimen name="rounded_corner_radius_top">104px</dimen>
 
+    <!-- Whether to allow sending active app broadcast -->
+    <bool name="config_allowActivePackageBroadcast">true</bool>
+
 </resources>
