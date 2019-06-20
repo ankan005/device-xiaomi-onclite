@@ -494,6 +494,13 @@ on property:ro.vendor.iocgrp.config=1
     write /dev/blkio/blkio.group_idle 2000
     write /dev/blkio/background/blkio.group_idle 0
 
+    # F2FS tuning: issue discard commands up to 128MB
+    write /sys/block/dm-7/queue/discard_max_bytes 134217728
+
+    # Block layer tuning: discard chunk size up to 128MB
+    # Otherwise, contiguous discards can be merged
+    write /sys/block/sda/queue/discard_max_bytes 134217728
+
 service vendor.qrtr-ns /vendor/bin/qrtr-ns -f
     class core
     user vendor_qrtr
