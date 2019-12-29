@@ -172,6 +172,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     sys.thermal.data.path=/data/vendor/thermal/ \
     persist.timed.enable=true \
     vendor.video.disable.ubwc=1 \
+    sys.display-size=1920x1080 \
     persist.sys.usb.diag_mdlog_enable=false \
     persist.debug.wfd.enable=1 \
     vendor.qcom.bluetooth.soc=smd \
