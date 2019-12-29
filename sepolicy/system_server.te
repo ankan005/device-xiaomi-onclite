@@ -3,3 +3,6 @@ get_prop(system_server, vendor_camera_prop)
 # Input devices
 r_dir_file(system_server, idc_file);
 r_dir_file(system_server, keylayout_file);
+
+#Smart charger
+allow system_server sysfs_battery_supply:file rw_file_perms;
