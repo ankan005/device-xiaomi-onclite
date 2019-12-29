@@ -175,3 +175,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.usb.diag_mdlog_enable=false \
     persist.debug.wfd.enable=1 \
     vendor.qcom.bluetooth.soc=smd \
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.sf.enable_gl_backpressure=1 \
+    debug.sf.early_phase_offset_ns=500000 \
+    debug.sf.early_app_phase_offset_ns=500000 \
+    debug.sf.early_gl_phase_offset_ns=3000000 \
+    debug.sf.early_gl_app_phase_offset_ns=15000000
