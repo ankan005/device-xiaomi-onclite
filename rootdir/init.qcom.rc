@@ -141,9 +141,6 @@ on boot
 
     chown bluetooth net_bt /sys/class/rfkill/rfkill0/device/extldo
     chmod 0660 /sys/class/rfkill/rfkill0/device/extldo
-	
-    chown system system /sys/class/power_supply/battery/charging_enabled
-    chmod 0666 /sys/class/power_supply/battery/charging_enabled
 
     #Create QMUX deamon socket area
     mkdir /dev/socket/qmux_radio 0770 radio radio
@@ -595,9 +592,9 @@ service vendor.ril-daemon2 /vendor/bin/hw/rild -c 2
     class main
     user radio
     group radio cache inet misc audio sdcard_r sdcard_rw diag log
-    capabilities BLOCK_SUSPEND NET_ADMIN NET_RA
-    
-service charger /sbin/charger
+    capabilities BLOCK_SUSPEND NET_ADMIN NET_RAW
+
+service charger /system/bin/charger
     class charger
     group system graphics
     seclabel u:r:charger:s0

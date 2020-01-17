@@ -1,5 +1,5 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/havoc_onclite.mk
+    $(LOCAL_DIR)/ion_onclite.mk
 
 COMMON_LUNCH_CHOICES := \
-    havoc_onclite-userdebug
+    ion_onclite-userdebug
