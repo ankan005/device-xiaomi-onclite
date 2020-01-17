@@ -121,8 +121,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service \
-    libgui_vendor \
-    Snap
+    libgui_vendor
 
 # Configstore
 PRODUCT_PACKAGES += \
@@ -186,10 +185,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.health@2.0-service \
     android.hardware.health@2.0-impl
-
-# Healthd
-PRODUCT_PACKAGES += \
-    chargeonlymode
 
 # HIDL
 PRODUCT_PACKAGES += \
