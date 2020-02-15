@@ -12,6 +12,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit from onclite device
 $(call inherit-product, device/xiaomi/onclite/device.mk)
 
+# Enable updating of APEXes
+$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+
 # Inherit some AEX stuff.
 $(call inherit-product, vendor/havoc/config/common_full_phone.mk)
 
