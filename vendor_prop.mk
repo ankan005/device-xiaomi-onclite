@@ -237,3 +237,6 @@ ro.surface_flinger.set_idle_timer_ms=9000
 # UI
 PRODUCT_PROPERTY_OVERRIDES += \
     sys.use_fifo_ui=1
+
+#Wifi call
+persist.dbg.wfc_avail_ovr=1
