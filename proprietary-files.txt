@@ -1496,9 +1496,6 @@ vendor/radio/qcril_database/upgrade/1_version_intro.sql
 vendor/radio/qcril_database/upgrade/2_version_add_wps_config.sql
 vendor/radio/qcril_database/upgrade/3_version_update_wps_config.sql
 
-# Radio (ims) - from  LA.UM.8.6.2.r1-03700-89xx.0 (patched to disable HD icon)
--product/priv-app/ims/ims.apk|f0fbe985cb3b08b319afaefa4576befdd68eb314
-
 # Radio - IMS - from LA.UM.8.6.2.r1-03700-89xx.0
 lib64/libdiag_system.so|d2df4091312b9fb9a4b6e0daa420bad676419426
 product/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml|aeaf8d4c7d421bd25a1aca1736980b6e4575c7ce
@@ -1522,9 +1519,7 @@ product/lib/vendor.qti.ims.callinfo@1.0.so|aa5c2d2143d84902bee4fe2fbb24e3bd5fc67
 product/lib/vendor.qti.ims.rcsconfig@1.0.so|11a1b3d1185954a24fcbf04fbb7216a751b476b6
 product/lib/vendor.qti.imsrtpservice@2.0.so|5329de382613d1a71fd22ebf639947958c5f38f2
 product/lib/vendor.qti.imsrtpservice@2.1.so|fd2190891aeac1508a16b4730ec385add1bb41d8
-product/lib64/libimscamera_jni.so|41512d3b9cd72b96e9b8ad5463566a3769f06cc1
 product/lib64/lib-imscamera.so|ec241a873401e49a366bf77335f771b80c1033b8
-product/lib64/libimsmedia_jni.so|fe4e642816530841a1e59419661dd4db60737c8f
 product/lib64/lib-imsvideocodec.so|594fc0d2340efcdf19ea73ffd6b46c5f0212f082
 product/lib64/lib-imsvtextutils.so|eeb28ae21c299c23015cee95daea28e72c21f133
 product/lib64/lib-imsvt.so|5b9b30b2ee323f021ccfdf72f2b4e7ea54681f39
@@ -1589,6 +1584,12 @@ vendor/lib64/vendor.qti.ims.rcsconfig@1.0.so|88d492e29713732b414fa7556d2108b0302
 vendor/lib64/vendor.qti.imsrtpservice@2.0.so|2a0c9695a20f33e374e73a52470d14e5cc172340
 vendor/lib64/vendor.qti.imsrtpservice@2.1-service-Impl.so|51e1875c371305303fee6132308379c5741cefc9
 vendor/lib64/vendor.qti.imsrtpservice@2.1.so|b4d690b8ff332233c70bf01bba7d5b5793564437
+
+#Radio - IMS - from LA.UM.8.6.r1-01900-89xx.0
+product/etc/permissions/telephony_product_privapp-permissions-qti.xml|0536410f98ef3be8ca7630ba8e9383e41e423ceb 
+product/lib64/libimscamera_jni.so|7cb89110cca94d37d68c705f12a7a5a4ee106139 
+product/lib64/libimsmedia_jni.so|e50217e9eb8878136614db66313508ac970a2b42
+-product/priv-app/ims/ims.apk|ce41daca328db67984843588e8bafa7e0eb53a0a
 
 # SCVE
 vendor/lib/libscveBlobDescriptor.so
