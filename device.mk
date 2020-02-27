@@ -355,9 +355,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     camera.msm8953_shim
 
-#Shipping level
-PRODUCT_SHIPPING_API_LEVEL := 29
-
 # TextClassifier smart selection model files
 PRODUCT_PACKAGES += \
     textclassifier.bundle1
