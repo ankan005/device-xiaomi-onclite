@@ -274,3 +274,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.lmk.kill_timeout_ms=100 \
     ro.lmk.use_minfree_levels=true \
     ro.lmk.log_stats=true
+
+#notch
+ro.miui.notch=1
